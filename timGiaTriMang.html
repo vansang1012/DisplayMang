@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    let value = (prompt("Mời bạn nhập giá trị :"));
+    value1 = parseInt(value);
+    let x = [3, 5, 1, -2, 3, 10, -10];
+    for (let i = 0; i < x.length; i++) {
+        if (value1 == x[i]) {
+            document.write(value + " có xuất hiện trong mảng tại vị trí thứ " + (i + 1)+"<br/>");
+        }
+    }
+
+</script>
+</body>
+</html>
