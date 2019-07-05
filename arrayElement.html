@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng 1 chiều</title>
+</head>
+<body>
+<h1>Sample Screen</h1>
+<input type="text" id="inputElement">
+<button onclick="add()">Add</button>
+<button onclick="display()">Display</button>
+<p id="result"></p>
+<script>
+    let x=0;
+    let array=Array();
+    function add(){
+    array[x]=document.getElementById("inputElement").value;
+    alert("Đã add giá trị " + array[x] + " vào vị trí thứ " + x);
+    x++;
+    document.getElementById("inputElement").value="";
+    }
+    function display() {
+        let e="<hr />";
+        for(let i=0;i<array.length;i++){
+            e+="Element " + i + " là : " + array[i] +"<br/>";
+        }
+        document.getElementById("result").innerHTML=e;
+
+
+    }
+
+</script>
+</body>
+</html>
