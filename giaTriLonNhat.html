@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 12, 5, 7, 9, 12, 7];
+    let max = 0;
+    let index = 0;
+    for (let i = 0; i < x.length; i++) {
+        if (max < x[i]) {
+            max = x[i];
+            index = i;
+        }
+    }
+    document.write("Mảng X = " + x + "<br/>");
+    document.write("Giá trị lớn nhất của mảng là : " + max + " có vị trí là:  " + index);
+</script>
+</body>
+</html>
