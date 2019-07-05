@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10];
+    let first = 0;
+    let last = x.length - 1;
+    document.write(x.reverse()+"<br/>");
+
+    while (first < last) {
+        let trungGian = x[first];
+        x[first] = x[last];
+        x[last] = trungGian;
+        first++;
+        last--;
+    }
+    document.write(x);
+
+</script>
+</body>
+</html>
